@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=2335;
+		nextID=2410;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=314;
+		nextID=322;
 	};
 	class Camera
 	{
-		pos[]={1896.3848,25.070139,4960.8003};
-		dir[]={-0.63002861,-0.54415756,-0.55426764};
-		up[]={-0.40868393,0.8387478,-0.35953945};
-		aside[]={-0.66060495,1.6730046e-006,0.75090039};
+		pos[]={1870.9292,86.577133,4976.0972};
+		dir[]={-0.092353128,-0.87027794,-0.48409107};
+		up[]={-0.16308255,0.49239147,-0.85483521};
+		aside[]={-0.98240453,9.769974e-007,0.1874166};
 	};
 };
 binarizationWanted=0;
@@ -21602,8 +21602,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
-					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
 					class Value
 					{
 						class data
@@ -21612,10 +21612,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="gm_ge_army_blk";
+							value=12;
 						};
 					};
 				};
@@ -21906,8 +21906,8 @@ class Mission
 				};
 				class Attribute16
 				{
-					property="ace_repair_editorLoadedTracks";
-					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
+					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 					class Value
 					{
 						class data
@@ -21916,10 +21916,10 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"STRING"
 								};
 							};
-							value=12;
+							value="gm_ge_army_blk";
 						};
 					};
 				};
@@ -22487,8 +22487,87 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1890.2303,13.821563,4942.0576};
-						angles[]={0,5.8629622,0};
+						position[]={1893.8855,13.842786,4944.4888};
+						angles[]={6.270689,1.0992634,6.2756844};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						description="Commander @Alpha 1";
+						isPlayable=1;
+					};
+					id=2336;
+					type="B_Fighter_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1893.0494,13.83902,4943.1401};
+						angles[]={0,1.0452106,0};
 					};
 					side="West";
 					flags=5;
@@ -22497,9 +22576,9 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 					};
-					id=2279;
+					id=2339;
 					type="B_Deck_Crew_F";
-					atlOffset=6.6757202e-006;
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22562,13 +22641,13 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item1
+				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1892.7924,13.839133,4943.0967};
-						angles[]={0,5.9410658,0};
+						position[]={1891.8271,13.870023,4945.5708};
+						angles[]={0,1.1233141,0};
 					};
 					side="West";
 					flags=5;
@@ -22577,9 +22656,9 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 					};
-					id=2280;
+					id=2341;
 					type="B_Deck_Crew_F";
-					atlOffset=9.5367432e-006;
+					atlOffset=2.8610229e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22642,24 +22721,24 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item2
+				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1888.3534,13.863513,4941.3804};
-						angles[]={0,1.1894685,0};
+						position[]={1889.808,13.838343,4943.1768};
+						angles[]={0,1.1894768,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						description="Team Leader @Bravo 1-1";
+						description="Team Leader ";
 						isPlayable=1;
 					};
-					id=2281;
+					id=2343;
 					type="B_soldier_UAV_F";
-					atlOffset=4.7683716e-006;
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22722,12 +22801,12 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item3
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1886.6465,13.903552,4941.6138};
+						position[]={1887.5234,13.866611,4943.6162};
 						angles[]={0,1.2349693,0};
 					};
 					side="West";
@@ -22737,7 +22816,7 @@ class Mission
 						description="MG";
 						isPlayable=1;
 					};
-					id=2282;
+					id=2345;
 					type="B_HeavyGunner_F";
 					atlOffset=4.7683716e-006;
 					class CustomAttributes
@@ -22821,12 +22900,12 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item4
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1887.2322,13.891153,4940.0723};
+						position[]={1888.4156,13.862295,4941.356};
 						angles[]={0,1.2349693,0};
 					};
 					side="West";
@@ -22836,7 +22915,7 @@ class Mission
 						description="MG Assistant ";
 						isPlayable=1;
 					};
-					id=2283;
+					id=2347;
 					type="B_Soldier_A_F";
 					atlOffset=3.8146973e-006;
 					class CustomAttributes
@@ -22901,55 +22980,13 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1886.0602,13.905691,4939.0557};
-						angles[]={0,1.1290466,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Rifleman";
-						isPlayable=1;
-					};
-					id=2284;
-					type="B_Soldier_unarmed_F";
-					atlOffset=3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1885.1024,13.925725,4941.6626};
-						angles[]={6.278194,1.1536194,6.270689};
+						position[]={1885.7595,13.915351,4942.9966};
+						angles[]={0.0075011365,1.1536194,6.2581916};
 					};
 					side="West";
 					flags=4;
@@ -22958,9 +22995,9 @@ class Mission
 						description="Grenadier";
 						isPlayable=1;
 					};
-					id=2285;
+					id=2350;
 					type="B_Soldier_lite_F";
-					atlOffset=2.8610229e-006;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22990,19 +23027,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1891.3148,13.8484,4943.8467};
-						angles[]={6.2681909,5.9170151,0};
+						position[]={1885.4954,13.919528,4941.4063};
+						angles[]={0,1.1290466,0};
 					};
 					side="West";
-					flags=6;
+					flags=5;
 					class Attributes
 					{
-						description="Commander @Alpha 1";
+						description="Rifleman";
 						isPlayable=1;
 					};
-					id=2286;
-					type="B_Fighter_Pilot_F";
-					atlOffset=7.6293945e-006;
+					id=2352;
+					type="B_Soldier_unarmed_F";
+					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23024,45 +23061,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=3;
+						nAttributes=1;
 					};
 				};
 				class Item8
@@ -23070,7 +23069,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1885.2128,13.917919,4940.377};
+						position[]={1887.2321,13.894133,4940.668};
 						angles[]={0,1.1290466,0};
 					};
 					side="West";
@@ -23080,9 +23079,9 @@ class Mission
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=2287;
+					id=2354;
 					type="B_Soldier_unarmed_F";
-					atlOffset=3.8146973e-006;
+					atlOffset=2.8610229e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23111,8 +23110,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2278;
-			atlOffset=7.6293945e-006;
+			id=2335;
 		};
 		class Item426
 		{
@@ -23126,7 +23124,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1888.6719,14.217073,4969.2266};
+						position[]={1888.2335,14.218064,4969.4712};
 						angles[]={0,2.5680602,0};
 					};
 					side="West";
@@ -23136,9 +23134,9 @@ class Mission
 						description="Commander @Alpha 2";
 						isPlayable=1;
 					};
-					id=2289;
+					id=2356;
 					type="B_crew_F";
-					atlOffset=1.9073486e-006;
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23225,7 +23223,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1889.3156,14.255461,4971.144};
+						position[]={1888.8772,14.25645,4971.3887};
 						angles[]={0,2.5431731,0};
 					};
 					side="West";
@@ -23235,9 +23233,9 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 					};
-					id=2290;
+					id=2357;
 					type="B_crew_F";
-					atlOffset=5.7220459e-006;
+					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23305,7 +23303,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1886.7374,14.183464,4969.5781};
+						position[]={1886.2991,14.175691,4969.8228};
 						angles[]={0,2.5248821,0};
 					};
 					side="West";
@@ -23315,7 +23313,7 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 					};
-					id=2291;
+					id=2358;
 					type="B_crew_F";
 					atlOffset=9.5367432e-007;
 					class CustomAttributes
@@ -23385,7 +23383,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1886.9735,14.226227,4971.6509};
+						position[]={1886.5352,14.218457,4971.8955};
 						angles[]={0,2.2607653,0};
 					};
 					side="West";
@@ -23395,9 +23393,9 @@ class Mission
 						description="Team Leader";
 						isPlayable=1;
 					};
-					id=2292;
+					id=2359;
 					type="B_Soldier_TL_F";
-					atlOffset=-2.8610229e-006;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23465,7 +23463,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1886.2041,14.285919,4973.9473};
+						position[]={1885.7657,14.285681,4974.1919};
 						angles[]={0,2.2607653,0};
 					};
 					side="West";
@@ -23475,9 +23473,8 @@ class Mission
 						description="MG";
 						isPlayable=1;
 					};
-					id=2293;
+					id=2360;
 					type="B_soldier_AR_F";
-					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23545,7 +23542,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1883.4247,14.189216,4972.7065};
+						position[]={1882.9863,14.202152,4972.9512};
 						angles[]={0,2.2607653,0};
 					};
 					side="West";
@@ -23555,9 +23552,8 @@ class Mission
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=2294;
+					id=2361;
 					type="B_Soldier_F";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23587,7 +23583,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1885.4565,14.311298,4975.4966};
+						position[]={1885.0182,14.312902,4975.7412};
 						angles[]={6.2631893,2.2607653,0.0075011365};
 					};
 					side="West";
@@ -23597,7 +23593,7 @@ class Mission
 						description="Grenadier";
 						isPlayable=1;
 					};
-					id=2295;
+					id=2362;
 					type="B_Soldier_GL_F";
 					atlOffset=-9.5367432e-007;
 					class CustomAttributes
@@ -23667,7 +23663,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1884.4143,14.24002,4973.9795};
+						position[]={1883.976,14.238894,4974.2241};
 						angles[]={0,2.3254488,0};
 					};
 					side="West";
@@ -23677,8 +23673,9 @@ class Mission
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=2296;
+					id=2363;
 					type="B_Soldier_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23708,7 +23705,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1884.9397,14.194683,4972.4849};
+						position[]={1884.5013,14.192413,4972.7295};
 						angles[]={0,2.2607653,0};
 					};
 					side="West";
@@ -23718,7 +23715,7 @@ class Mission
 						description="MG Assistant ";
 						isPlayable=1;
 					};
-					id=2297;
+					id=2364;
 					type="B_soldier_AAR_F";
 					class CustomAttributes
 					{
@@ -23786,8 +23783,8 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2288;
-			atlOffset=1.9073486e-006;
+			id=2355;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item427
 		{
@@ -23801,7 +23798,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1877.3536,14.132096,4960.6172};
+						position[]={1876.9772,14.138996,4960.7427};
 						angles[]={0,2.2105989,0};
 					};
 					side="West";
@@ -23811,9 +23808,9 @@ class Mission
 						description="Commander @Bravo 1";
 						isPlayable=1;
 					};
-					id=2299;
+					id=2366;
 					type="B_crew_F";
-					atlOffset=8.5830688e-006;
+					atlOffset=6.6757202e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23881,7 +23878,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1877.322,14.174424,4962.2979};
+						position[]={1876.9456,14.181322,4962.4233};
 						angles[]={0,2.1857123,0};
 					};
 					side="West";
@@ -23891,9 +23888,9 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 					};
-					id=2300;
+					id=2367;
 					type="B_crew_F";
-					atlOffset=3.8146973e-006;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23961,7 +23958,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1875.6722,14.137727,4960.27};
+						position[]={1875.2958,14.145566,4960.3955};
 						angles[]={0,2.1674213,0};
 					};
 					side="West";
@@ -23971,9 +23968,9 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 					};
-					id=2301;
+					id=2368;
 					type="B_crew_F";
-					atlOffset=1.4305115e-005;
+					atlOffset=1.0490417e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24041,7 +24038,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1875.2997,14.197742,4962.9111};
+						position[]={1874.9232,14.198052,4963.0366};
 						angles[]={0,2.642241,0};
 					};
 					side="West";
@@ -24051,9 +24048,9 @@ class Mission
 						description="Team Leader";
 						isPlayable=1;
 					};
-					id=2302;
+					id=2369;
 					type="B_Soldier_TL_F";
-					atlOffset=2.1934509e-005;
+					atlOffset=1.9073486e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24121,7 +24118,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1875.3522,14.206294,4964.5913};
+						position[]={1874.9757,14.198763,4964.7168};
 						angles[]={0,2.642241,0};
 					};
 					side="West";
@@ -24131,9 +24128,9 @@ class Mission
 						description="MG";
 						isPlayable=1;
 					};
-					id=2303;
+					id=2370;
 					type="B_soldier_AR_F";
-					atlOffset=2.0980835e-005;
+					atlOffset=1.8119812e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24201,7 +24198,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1873.8202,14.210253,4963.8555};
+						position[]={1873.4437,14.210564,4963.981};
 						angles[]={0,2.642241,0};
 					};
 					side="West";
@@ -24211,9 +24208,9 @@ class Mission
 						description="MG Assistant ";
 						isPlayable=1;
 					};
-					id=2304;
+					id=2371;
 					type="B_soldier_AAR_F";
-					atlOffset=2.0980835e-005;
+					atlOffset=1.8119812e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24281,7 +24278,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1872.701,14.18599,4964.6025};
+						position[]={1872.3246,14.178458,4964.728};
 						angles[]={0,2.6422424,0};
 					};
 					side="West";
@@ -24291,9 +24288,9 @@ class Mission
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=2305;
+					id=2372;
 					type="B_Soldier_F";
-					atlOffset=2.0980835e-005;
+					atlOffset=1.8119812e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24323,7 +24320,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1875.3698,14.174726,4966.0986};
+						position[]={1874.9933,14.162801,4966.2241};
 						angles[]={0.019996032,2.642241,0.024993783};
 					};
 					side="West";
@@ -24333,9 +24330,9 @@ class Mission
 						description="Grenadier";
 						isPlayable=1;
 					};
-					id=2306;
+					id=2373;
 					type="B_Soldier_GL_F";
-					atlOffset=2.0027161e-005;
+					atlOffset=1.6212463e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24403,7 +24400,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1873.9451,14.17029,4965.27};
+						position[]={1873.5686,14.162758,4965.3955};
 						angles[]={0,2.6422424,0};
 					};
 					side="West";
@@ -24413,9 +24410,9 @@ class Mission
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=2307;
+					id=2374;
 					type="B_Soldier_F";
-					atlOffset=2.0980835e-005;
+					atlOffset=1.8119812e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24444,8 +24441,8 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2298;
-			atlOffset=8.5830688e-006;
+			id=2365;
+			atlOffset=6.6757202e-006;
 		};
 		class Item428
 		{
@@ -24459,491 +24456,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1896.4724,13.757055,4931.7129};
-						angles[]={0,0.53932458,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Gunner";
-						isPlayable=1;
-					};
-					id=2309;
-					type="B_Deck_Crew_F";
-					atlOffset=9.5367432e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male09ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1898.7938,13.735894,4930.2124};
-						angles[]={0,0.61742812,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Driver";
-						isPlayable=1;
-					};
-					id=2310;
-					type="B_Deck_Crew_F";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male06ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1895.729,13.774013,4928.9189};
-						angles[]={0,1.1405405,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Team Leader @Bravo 2-1";
-						isPlayable=1;
-					};
-					id=2311;
-					type="B_soldier_UAV_F";
-					atlOffset=2.8610229e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.05;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1894.0128,13.796407,4929.0684};
-						angles[]={0,1.1860412,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="MG";
-						isPlayable=1;
-					};
-					id=2312;
-					type="B_HeavyGunner_F";
-					atlOffset=2.8610229e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1894.6731,13.782253,4927.5576};
-						angles[]={0,1.1860412,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="MG Assistant ";
-						isPlayable=1;
-					};
-					id=2313;
-					type="B_Soldier_A_F";
-					atlOffset=5.7220459e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1893.5522,13.787964,4926.4844};
-						angles[]={0,1.0801185,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						description="Rifleman";
-						isPlayable=1;
-					};
-					id=2314;
-					type="B_Soldier_unarmed_F";
-					atlOffset=5.7220459e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1892.4681,13.811721,4929.0415};
-						angles[]={6.278194,1.1046914,6.2731848};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						description="Grenadier";
-						isPlayable=1;
-					};
-					id=2315;
-					type="B_Soldier_lite_F";
-					atlOffset=4.7683716e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="sfp_ranks_branch";
-							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={1898.5593,13.741753,4931.8535};
+						position[]={1898.0764,13.744222,4931.3921};
 						angles[]={6.2806959,0.59337705,6.2756844};
 					};
 					side="West";
@@ -24953,7 +24466,7 @@ class Mission
 						description="Commander @Bravo 2";
 						isPlayable=1;
 					};
-					id=2316;
+					id=2376;
 					type="B_Fighter_Pilot_F";
 					class CustomAttributes
 					{
@@ -25017,12 +24530,453 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item8
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1892.6337,13.803594,4927.7466};
+						position[]={1896.8497,13.7545,4932.2769};
+						angles[]={0,0.53932458,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Gunner";
+						isPlayable=1;
+					};
+					id=2378;
+					type="B_Deck_Crew_F";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1897.8972,13.744328,4929.4102};
+						angles[]={0,0.61742812,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Driver";
+						isPlayable=1;
+					};
+					id=2380;
+					type="B_Deck_Crew_F";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1896.1558,13.764687,4929.9722};
+						angles[]={0,1.1405377,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Team Leader";
+						isPlayable=1;
+					};
+					id=2382;
+					type="B_soldier_UAV_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1894.791,13.786567,4930.4624};
+						angles[]={0,1.1860412,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="MG";
+						isPlayable=1;
+					};
+					id=2384;
+					type="B_HeavyGunner_F";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1895.8533,13.772927,4928.4819};
+						angles[]={0,1.1860412,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="MG Assistant ";
+						isPlayable=1;
+					};
+					id=2386;
+					type="B_Soldier_A_F";
+					atlOffset=9.5367432e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1892.6729,13.810647,4929.2358};
+						angles[]={6.278194,1.1046914,6.2731848};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						description="Grenadier";
+						isPlayable=1;
+					};
+					id=2388;
+					type="B_Soldier_lite_F";
+					atlOffset=5.7220459e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1892.8889,13.802166,4927.9712};
 						angles[]={0,1.0801185,0};
 					};
 					side="West";
@@ -25032,9 +24986,51 @@ class Mission
 						description="Rifleman";
 						isPlayable=1;
 					};
-					id=2317;
+					id=2390;
 					type="B_Soldier_unarmed_F";
-					atlOffset=6.6757202e-006;
+					atlOffset=8.5830688e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="sfp_ranks_branch";
+							expression="_this setVariable ['SFP_UNIT_RANK_BRANCH', _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1893.1561,13.78633,4926.3755};
+						angles[]={0,1.0801185,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Rifleman";
+						isPlayable=1;
+					};
+					id=2392;
+					type="B_Soldier_unarmed_F";
+					atlOffset=5.7220459e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25063,7 +25059,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2308;
+			id=2375;
 		};
 		class Item429
 		{
@@ -25077,7 +25073,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1917.7107,14.063458,4968.8335};
+						position[]={1918.204,14.056491,4969.4995};
 						angles[]={0,2.9103541,0};
 					};
 					side="West";
@@ -25087,7 +25083,7 @@ class Mission
 						description="Medic @Charlie";
 						isPlayable=1;
 					};
-					id=2319;
+					id=2394;
 					type="B_medic_F";
 					atlOffset=-2.8610229e-006;
 					class CustomAttributes
@@ -25176,7 +25172,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1916.2185,14.091564,4969.6294};
+						position[]={1916.7118,14.084598,4970.2954};
 						angles[]={0,2.8434308,0};
 					};
 					side="West";
@@ -25186,7 +25182,7 @@ class Mission
 						description="Medic";
 						isPlayable=1;
 					};
-					id=2320;
+					id=2395;
 					type="B_medic_F";
 					class CustomAttributes
 					{
@@ -25255,7 +25251,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1916.8937,14.082758,4971.3179};
+						position[]={1917.387,14.067095,4971.9839};
 						angles[]={0.0050033992,2.8478537,6.2581916};
 					};
 					side="West";
@@ -25265,7 +25261,7 @@ class Mission
 						description="Medic";
 						isPlayable=1;
 					};
-					id=2321;
+					id=2396;
 					type="B_Competitor_F";
 					class CustomAttributes
 					{
@@ -25334,7 +25330,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1918.5427,14.046532,4970.3179};
+						position[]={1919.036,14.030869,4970.9839};
 						angles[]={0.0050033992,2.8360205,6.2581916};
 					};
 					side="West";
@@ -25344,7 +25340,7 @@ class Mission
 						description="Medic";
 						isPlayable=1;
 					};
-					id=2322;
+					id=2397;
 					type="B_Competitor_F";
 					class CustomAttributes
 					{
@@ -25412,7 +25408,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2318;
+			id=2393;
 			atlOffset=-2.8610229e-006;
 		};
 		class Item430
@@ -25427,8 +25423,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1904.8965,13.667866,4922.8384};
-						angles[]={0,5.9069099,0};
+						position[]={1904.9698,13.672098,4922.2866};
+						angles[]={0,0.095574543,0};
 					};
 					side="West";
 					flags=7;
@@ -25437,7 +25433,7 @@ class Mission
 						description="Commander @Romeo";
 						isPlayable=1;
 					};
-					id=2324;
+					id=2399;
 					type="B_crew_F";
 					class CustomAttributes
 					{
@@ -25506,8 +25502,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1904.4192,13.690081,4921.4521};
-						angles[]={0,5.8820214,0};
+						position[]={1903.9147,13.700743,4921.269};
+						angles[]={0,0.070686027,0};
 					};
 					side="West";
 					flags=5;
@@ -25516,9 +25512,9 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 					};
-					id=2325;
+					id=2400;
 					type="B_crew_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=2.8610229e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25586,8 +25582,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1905.7952,13.659682,4922.084};
-						angles[]={0,5.8637304,0};
+						position[]={1905.4275,13.674896,4921.2061};
+						angles[]={0,0.052395031,0};
 					};
 					side="West";
 					flags=5;
@@ -25596,7 +25592,7 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 					};
-					id=2326;
+					id=2401;
 					type="B_crew_F";
 					class CustomAttributes
 					{
@@ -25664,7 +25660,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2323;
+			id=2398;
 		};
 		class Item431
 		{
@@ -25678,7 +25674,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1910.3971,13.695675,4929.21};
+						position[]={1910.8589,13.694186,4928.353};
 						angles[]={0,0.53932416,0};
 					};
 					side="West";
@@ -25688,8 +25684,9 @@ class Mission
 						description="Commander @Echo";
 						isPlayable=1;
 					};
-					id=2328;
+					id=2403;
 					type="B_Deck_Crew_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25757,7 +25754,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1912.0389,13.678295,4928.6196};
+						position[]={1912.5007,13.675529,4927.7627};
 						angles[]={0,0.61742812,0};
 					};
 					side="West";
@@ -25767,9 +25764,9 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 					};
-					id=2329;
+					id=2404;
 					type="B_Deck_Crew_F";
-					atlOffset=-2.8610229e-006;
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25837,7 +25834,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1910.0348,13.706006,4927.6089};
+						position[]={1910.4966,13.700233,4926.752};
 						angles[]={0,0.53932458,0};
 					};
 					side="West";
@@ -25847,9 +25844,9 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 					};
-					id=2330;
+					id=2405;
 					type="B_Deck_Crew_F";
-					atlOffset=1.9073486e-006;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25916,7 +25913,8 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2327;
+			id=2402;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item432
 		{
@@ -25930,7 +25928,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1915.6954,13.672213,4931.0229};
+						position[]={1915.7736,13.671831,4930.9204};
 						angles[]={0,5.9069099,0};
 					};
 					side="West";
@@ -25940,9 +25938,9 @@ class Mission
 						description="Commander @Foxtrot";
 						isPlayable=1;
 					};
-					id=2332;
+					id=2407;
 					type="B_crew_F";
-					atlOffset=-1.9073486e-006;
+					atlOffset=-5.7220459e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26010,7 +26008,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1915.2183,13.659426,4929.6357};
+						position[]={1915.2964,13.659046,4929.5332};
 						angles[]={0,5.8820214,0};
 					};
 					side="West";
@@ -26020,9 +26018,8 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 					};
-					id=2333;
+					id=2408;
 					type="B_crew_F";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26090,7 +26087,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1916.5942,13.672529,4930.2676};
+						position[]={1916.6724,13.672346,4930.165};
 						angles[]={0,5.8637304,0};
 					};
 					side="West";
@@ -26100,7 +26097,7 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 					};
-					id=2334;
+					id=2409;
 					type="B_crew_F";
 					class CustomAttributes
 					{
@@ -26168,8 +26165,8 @@ class Mission
 			class Attributes
 			{
 			};
-			id=2331;
-			atlOffset=-1.9073486e-006;
+			id=2406;
+			atlOffset=-5.7220459e-006;
 		};
 	};
 	class Connections
