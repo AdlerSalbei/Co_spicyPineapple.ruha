@@ -8,3 +8,12 @@ enableSaving [false, false];
 
 // SCRIPTS =====================================================================
 [] execVM "USER\userInit.sqf";
+
+[
+	"GRAD_seatPlayer", 
+	{
+		params ["_unit", "_chair"];
+		
+		[_chair, _unit] call acex_sitting_fnc_sit;
+	}
+] call CBA_fnc_addEventHandler;

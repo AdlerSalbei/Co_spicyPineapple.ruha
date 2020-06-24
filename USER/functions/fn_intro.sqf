@@ -12,21 +12,19 @@ cutText ["","BLACK FADED", 999];
     private _camera = "camera" camCreate (getPos camPos_01);
     _camera camSetPos (getPos camTarget_01);
     _camera camCommand "inertia on";
-    _camera camSetTarget radio_1;
+    _camera camSetTarget radio_01;
     _camera cameraEffect ["internal", "back"];
     _camera camSetFov 1;
     _camera camCommit 0;
     _camera camSetPos (getPos camPos_01);
-    _camera camSetTarget camTarget_01;
+    _camera camSetTarget radio_01;
     _camera camCommit 1;
 
     [{
         cutText ["","BLACK IN", 0];
 
         [{
-			params ["_camera"];
-			_camera camSetTarget radio_01;
-			_camera camCommit 7;  
+			params ["_camera"]; 
             _camera camSetPos (getPos camPos_02);
             _camera camCommit 15; 
 
