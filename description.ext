@@ -105,6 +105,13 @@ class Params {
 //SOUNDS =======================================================================
 class CfgSounds {
 	#include "USER\userSounds.hpp"
+
+    class radioSFP
+	{
+		name = "radioSFP";
+		sound[] = { "data\radio.ogg", 1, 1 };
+		titles[] = {};
+	};
 };
 
 
