@@ -1,9 +1,8 @@
 params [["_color", "#FFFFFF"]];
 
-0 fadeSound 0.1;
-
-playMusic ["LeadTrack01_F_Tank", 0];
 showChat false;
+STHud_UIMode = 0;
+diwako_dui_main_toggled_off = true;
 
 //Create black background
 cutText ["","BLACK FADED", 999];
@@ -19,9 +18,11 @@ cutText ["","BLACK FADED", 999];
     _camera camSetPos (getPos camPos_01);
     _camera camSetTarget radio_01;
     _camera camCommit 1;
+  
+    radio_01 say3D ["radioSFP", 150, 1, false];
 
     [{
-        cutText ["","BLACK IN", 0];
+        cutText ["","BLACK IN", 2];
 
         [{
 			params ["_camera"]; 
@@ -29,50 +30,87 @@ cutText ["","BLACK FADED", 999];
             _camera camCommit 15; 
 
             [{
-				[ 
-					parseText "<t font='PuristaBold' size='7' color='#000000'>COOP SPICY PINEAPPLE </t>", 
-					[ 
-						safezoneX + 0.18 * safezoneW, 
-						safezoneY + 0.35 * safezoneH, 
-						2, 
-						1 
-					], 
-					nil, 
-					3, 
-					[4,0.5], 
-					0 
-				] spawn BIS_fnc_textTiles;        
+                params ["_camera"]; 
+                _camera camSetPos (getPos camPos_03);
+                _camera camSetTarget frame_02;
+                _camera camCommit 15;
 
                 [{
-                    params ["_camera"/*,"_filmgrain"*/];
-
-                    cutText ["","BLACK FADED", 0];
-
-                    if (isNil "GRAD_USER_introOver") then {
-                        GRAD_USER_introOver = true;
-                        publicVariable "GRAD_USER_introOver";
-                    };                  
+                    params ["_camera"]; 
+                    _camera camSetPos (getPos camPos_04);
+                    _camera camSetTarget frame_03;
+                    _camera camCommit 15;
 
                     [{
-                        cutText ["","BLACK IN", 10];
-                        10 fadeSound 1;
+                        params ["_camera"]; 
+                        _camera camSetPos (getPos camPos_05);
+                        _camera camSetTarget camTarget_01;
+                        _camera camCommit 15;
+
                         [{
-                            STHud_UIMode = 1;
-                            diwako_dui_main_toggled_off = false;
-                            showChat true;
-                        }, [], 10] call CBA_fnc_waitAndExecute;
-                    }, [], 3] call CBA_fnc_waitAndExecute;
-                    
-                    1.2 fadeMusic 0;
-                    _camera cameraEffect ["terminate", "back"];
-                    camDestroy _camera;
+                        params ["_camera"]; 
+                        _camera camSetPos (getPos camPos_06);
+                        _camera camCommit 45;
+                        _camera camSetTarget camTarget_02;
+                        _camera camCommit 15;
 
-                    [{
-                        playMusic "";
-                        0 fadeMusic 1;
-                    }, [], 10] call CBA_fnc_waitAndExecute
-                }, _this, 24] call CBA_fnc_waitAndExecute;
-            }, _this, 5] call CBA_fnc_waitAndExecute;
+                        [{
+                        params ["_camera"]; 
+                        _camera camSetTarget camTarget_03;
+                        _camera camCommit 15;
+
+                        [{
+                        params ["_camera"]; 
+                        frame_01 setObjectTextureGlobal [0, "data\anrop.paa"];
+                        _camera camSetTarget camTarget_04;
+                        _camera camCommit 15;
+
+                        [{
+                        params ["_camera"]; 
+                        _camera camSetPos (getPos camPos_07);
+                        _camera camSetTarget frame_01;
+                        _camera camCommit 15;
+
+                        [{
+                        frame_04 setObjectTextureGlobal [0, "data\anrop.paa"];
+
+                        [{
+                            params ["_camera"]; 
+                            _camera camSetTarget frame_04;
+                            _camera camCommit 15;
+                        [{
+                            params ["_camera"];
+
+                            cutText ["","BLACK FADED", 0];
+
+                            if (isNil "GRAD_USER_introOver") then {
+                                GRAD_USER_introOver = true;
+                                publicVariable "GRAD_USER_introOver";
+                            };                  
+
+                            [{
+                               params ["_camera"]; 
+
+                                _camera cameraEffect ["terminate", "back"];
+                                camDestroy _camera;
+
+                                [{
+                                    cutText ["","BLACK IN", 10];
+                                    STHud_UIMode = 1;
+                                    diwako_dui_main_toggled_off = false;
+                                    showChat true;
+                                }, [], 5] call CBA_fnc_waitAndExecute
+                            }, _this, 2] call CBA_fnc_waitAndExecute;
+                            }, _this, 15] call CBA_fnc_waitAndExecute;
+                            }, _this, 7] call CBA_fnc_waitAndExecute;
+                            }, _this, 8] call CBA_fnc_waitAndExecute;
+                            }, _this, 15] call CBA_fnc_waitAndExecute;
+                            }, _this, 15] call CBA_fnc_waitAndExecute;
+                            }, _this, 15] call CBA_fnc_waitAndExecute;
+                        }, _this, 15] call CBA_fnc_waitAndExecute;
+                    }, _this, 15] call CBA_fnc_waitAndExecute;
+                }, _this, 15] call CBA_fnc_waitAndExecute;
+            }, _this, 15] call CBA_fnc_waitAndExecute;
         }, _this, 5] call CBA_fnc_waitAndExecute;
-    },[_camera], 5] call CBA_fnc_waitAndExecute;
+    },[_camera], 1] call CBA_fnc_waitAndExecute;
 },[], 1] call CBA_fnc_waitAndExecute;

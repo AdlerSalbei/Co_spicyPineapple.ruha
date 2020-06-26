@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2839;
+		nextID=2851;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=376;
+		nextID=385;
 	};
 	class Camera
 	{
-		pos[]={1943.515,45.208916,4905.1304};
-		dir[]={-0.6717422,-0.57371175,0.46888945};
-		up[]={-0.47050884,0.81875914,0.32843134};
-		aside[]={0.57242197,-4.6626665e-006,0.8200897};
+		pos[]={6103.0356,55.345745,6154.8862};
+		dir[]={0.45049509,-0.75506133,-0.47663689};
+		up[]={0.51863712,0.65535051,-0.54874051};
+		aside[]={-0.72682953,-7.2810799e-006,-0.68698889};
 	};
 };
 binarizationWanted=0;
@@ -5113,7 +5113,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=579;
+		items=591;
 		class Item0
 		{
 			dataType="Layer";
@@ -21662,8 +21662,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_repair_editorLoadedTracks";
-					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
+					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 					class Value
 					{
 						class data
@@ -21672,10 +21672,10 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"STRING"
 								};
 							};
-							value=12;
+							value="gm_ge_army_blk";
 						};
 					};
 				};
@@ -21985,8 +21985,8 @@ class Mission
 				};
 				class Attribute17
 				{
-					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
-					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
 					class Value
 					{
 						class data
@@ -21995,10 +21995,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="gm_ge_army_blk";
+							value=12;
 						};
 					};
 				};
@@ -38791,12 +38791,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6122.04,13.596501,6135.0181};
-				angles[]={0,4.7116246,0};
+				position[]={6121.4609,13.619017,6135.063};
+				angles[]={0,4.7116208,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				name="frame_01";
 			};
 			id=2808;
 			type="UserTexture10m_F";
@@ -38818,7 +38819,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="data\loadpic.paa";
+							value="";
 						};
 					};
 				};
@@ -39200,6 +39201,269 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item579
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6146.874,13.373515,6116.8901};
+				angles[]={0,3.1415927,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="frame_04";
+			};
+			id=2839;
+			type="UserTexture10m_F";
+			atlOffset=5.1370001;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item580
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6132.1733,13.826955,6137.3232};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camPos_04";
+			};
+			id=2840;
+			type="Land_HelipadEmpty_F";
+			atlOffset=5.7461634;
+		};
+		class Item581
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6117.0767,15.683715,6117.0576};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camPos_05";
+			};
+			id=2841;
+			type="Land_HelipadEmpty_F";
+			atlOffset=7.576026;
+		};
+		class Item582
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6146.0581,16.810448,6111.499};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camPos_06";
+			};
+			id=2842;
+			type="Land_HelipadEmpty_F";
+			atlOffset=8.5762644;
+		};
+		class Item583
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6121.1411,10.918993,6130.2261};
+				angles[]={0,4.712389,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="frame_02";
+			};
+			id=2843;
+			type="UserTexture1m_F";
+			atlOffset=2.6450005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="data\anrop.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item584
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6142.6729,11.008738,6117.7051};
+				angles[]={0.0024958209,3.1415927,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="frame_03";
+			};
+			id=2844;
+			type="UserTexture1m_F";
+			atlOffset=2.8030005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="data\adler.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item585
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6112.7368,16.952599,6241.5581};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camTarget_01";
+			};
+			id=2845;
+			type="Land_HelipadEmpty_F";
+			atlOffset=10.617601;
+		};
+		class Item586
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6016.7266,17.630892,6114.7397};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camTarget_02";
+			};
+			id=2846;
+			type="Land_HelipadEmpty_F";
+			atlOffset=9.4961586;
+		};
+		class Item587
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6120.9204,19.079903,6014.8867};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camTarget_03";
+			};
+			id=2847;
+			type="Land_HelipadEmpty_F";
+			atlOffset=10.617601;
+		};
+		class Item588
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6234.2349,18.217701,6115.438};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camTarget_04";
+			};
+			id=2848;
+			type="Land_HelipadEmpty_F";
+			atlOffset=10.617601;
+		};
+		class Item589
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6149.2793,16.847977,6131.3872};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="camPos_07";
+			};
+			id=2849;
+			type="Land_HelipadEmpty_F";
+			atlOffset=8.5762653;
+		};
+		class Item590
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6133.585,8.0789108,6133.2241};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="clusterPos_01";
+			};
+			id=2850;
+			type="Land_HelipadEmpty_F";
 		};
 	};
 	class Connections
