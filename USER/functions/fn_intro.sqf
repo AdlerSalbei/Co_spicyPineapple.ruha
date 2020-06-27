@@ -7,6 +7,11 @@ diwako_dui_main_toggled_off = true;
 //Create black background
 cutText ["","BLACK FADED", 999];
 
+if (isServer) then {
+    [chair_01, rifleman_01] call acex_sitting_fnc_sit;
+    [chair_02, rifleman_02] call acex_sitting_fnc_sit;
+    [chair_03, rifleman_03] call acex_sitting_fnc_sit;
+};
 [{
     private _camera = "camera" camCreate (getPos camPos_01);
     _camera camSetPos (getPos camTarget_01);
@@ -19,7 +24,7 @@ cutText ["","BLACK FADED", 999];
     _camera camSetTarget radio_01;
     _camera camCommit 1;
   
-    radio_01 say3D ["radioSFP", 150, 1, false];
+    radio_01 say3D ["radioSFP", 300, 1, false];
 
     [{
         cutText ["","BLACK IN", 2];
@@ -57,11 +62,17 @@ cutText ["","BLACK FADED", 999];
                         [{
                         params ["_camera"]; 
                         _camera camSetTarget camTarget_03;
+                        if (isServer) then {
+                            frame_02 setObjectTextureGlobal [0, ""];
+                            frame_03 setObjectTextureGlobal [0, ""];
+                        };
                         _camera camCommit 15;
 
                         [{
                         params ["_camera"]; 
-                        frame_01 setObjectTextureGlobal [0, "data\anrop.paa"];
+                        if (isServer) then {
+                            frame_01 setObjectTextureGlobal [0, "data\sweedish_adler.paa"];
+                        };
                         _camera camSetTarget camTarget_04;
                         _camera camCommit 15;
 
@@ -72,12 +83,31 @@ cutText ["","BLACK FADED", 999];
                         _camera camCommit 15;
 
                         [{
-                        frame_04 setObjectTextureGlobal [0, "data\anrop.paa"];
-
+                            if (isServer) then {
+                                frame_04 setObjectTextureGlobal [0, "data\missionName.paa"];
+                            };
                         [{
                             params ["_camera"]; 
                             _camera camSetTarget frame_04;
                             _camera camCommit 15;
+                        [{
+                            if (isServer) then {
+                                private _pos = getPosASL clusterPos_01;
+                                
+                                'BombCluster_01_Ammo_F' createVehicle (_pos vectorAdd [0,-380,500]);
+                                'BombCluster_02_Ammo_F' createVehicle (_pos vectorAdd [25,-250,500]);
+                                'BombCluster_03_Ammo_F' createVehicle (_pos vectorAdd [-25,-400,500]);
+                            };
+                        [{
+                            params ["_camera"]; 
+                            if (isServer) then {
+                                frame_01 setObjectTextureGlobal [0, ""];
+                            };
+                            
+                            _camera camSetPos (getPos camPos_08);
+                            _camera camSetTarget radio_01;
+                            _camera camCommit 15;
+                        
                         [{
                             params ["_camera"];
 
@@ -101,7 +131,9 @@ cutText ["","BLACK FADED", 999];
                                     showChat true;
                                 }, [], 5] call CBA_fnc_waitAndExecute
                             }, _this, 2] call CBA_fnc_waitAndExecute;
-                            }, _this, 15] call CBA_fnc_waitAndExecute;
+                            }, _this, 40] call CBA_fnc_waitAndExecute;
+                            }, _this, 1] call CBA_fnc_waitAndExecute;
+                            }, _this, 14] call CBA_fnc_waitAndExecute;
                             }, _this, 7] call CBA_fnc_waitAndExecute;
                             }, _this, 8] call CBA_fnc_waitAndExecute;
                             }, _this, 15] call CBA_fnc_waitAndExecute;

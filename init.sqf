@@ -7,7 +7,7 @@ enableSaving [false, false];
 5 enableChannel false;  // direct
 
 // SCRIPTS =====================================================================
-[] execVM "USER\userInit.sqf";
+//[] execVM "USER\userInit.sqf";
 
 [
 	"GRAD_seatPlayer", 
