@@ -20,6 +20,12 @@ WEST setFriend [EAST, 1];
 				[] call GRAD_USER_fnc_intro;
 			}
 		] remoteExecCall ["call", _allPlayers];
+
+		[chair_01, rifleman_01] call acex_sitting_fnc_sit;
+		[chair_02, rifleman_02] call acex_sitting_fnc_sit;
+		[chair_03, rifleman_03] call acex_sitting_fnc_sit;
+
+		[] call GRAD_USER_fnc_intro;
 	}, 
 	[], 
 	15
