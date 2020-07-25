@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2874;
+		nextID=2875;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=421;
+		nextID=430;
 	};
 	class Camera
 	{
-		pos[]={1917.7692,39.059948,4950.1836};
-		dir[]={-0.67387909,-0.49395874,0.54966182};
-		up[]={-0.38281998,0.86943227,0.31225395};
-		aside[]={0.63213938,-9.0961112e-007,0.77500862};
+		pos[]={1562.0552,235.18384,4951.5874};
+		dir[]={0.85702354,-0.4280563,-0.28727013};
+		up[]={0.40594792,0.90362847,-0.13606815};
+		aside[]={-0.3178412,-9.8059536e-007,-0.94824499};
 	};
 };
 binarizationWanted=0;
@@ -90,9 +90,6 @@ addons[]=
 	"rhs_c_bmp",
 	"gm_vehicles_land_tracked_bpz2_ge_army_bpz2",
 	"gm_vehicles_land_wheeled_luchs_ge_army_luchs",
-	"gm_weapons_machineguns_mg3",
-	"A3_Characters_F_Heads",
-	"ace_goggles",
 	"A3_Characters_F_Jets",
 	"A3_Characters_F_Mark",
 	"rhs_c_btr",
@@ -124,7 +121,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=74;
+		items=72;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -450,167 +447,153 @@ class AddonsMetaData
 		};
 		class Item49
 		{
-			className="gm_weapons_machineguns_mg3";
-			name="gm_weapons_machineguns_mg3";
-			author="Global Mobilization";
-			url="global-mobilization.com";
-		};
-		class Item50
-		{
-			className="ace_goggles";
-			name="ACE3 - Goggles";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item51
-		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item52
+		class Item50
 		{
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item53
+		class Item51
 		{
 			className="rhs_c_btr";
 			name="BTR-70 & 80";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item54
+		class Item52
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item55
+		class Item53
 		{
 			className="rhs_c_trucks";
 			name="GAZ-66";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item56
+		class Item54
 		{
 			className="rhs_c_a2port_car";
 			name="A2 ported cars";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item57
+		class Item55
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item58
+		class Item56
 		{
 			className="rhsusf_c_m252";
 			name="rhsusf_c_m252";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item59
+		class Item57
 		{
 			className="A3_Props_F_Exp_A";
 			name="Arma 3 Nexus Update - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item60
+		class Item58
 		{
 			className="gm_vehicles_land_wheeled_btr60_gc_army_btr60";
 			name="gm_vehicles_land_wheeled_btr60_gc_army_btr60";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item61
+		class Item59
 		{
 			className="gm_objects_fortification";
 			name="gm_objects_fortification";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item62
+		class Item60
 		{
 			className="rhs_sounds";
 			name="AFRF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item63
+		class Item61
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item64
+		class Item62
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item65
+		class Item63
 		{
 			className="acex_intelitems";
 			name="ACEX - Intel Items";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item66
+		class Item64
 		{
 			className="A3_Weapons_F_Orange";
 			name="Arma 3 Orange - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item67
+		class Item65
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item68
+		class Item66
 		{
 			className="CUP_CA_Config";
 			name="CUP_CA_Config";
 		};
-		class Item69
+		class Item67
 		{
 			className="gm_weapons_put";
 			name="gm_weapons_put";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item70
+		class Item68
 		{
 			className="gm_weapons_ammoboxes";
 			name="gm_weapons_ammoboxes";
 			author="Global Mobilization";
 			url="global-mobilization.com";
 		};
-		class Item71
+		class Item69
 		{
 			className="Redd_Vehicles_Main";
 			name="Redd_Vehicles_Main";
 		};
-		class Item72
+		class Item70
 		{
 			className="rnt_lkw_7t_mil_gl_kat_i";
 			name="rnt_lkw_7t_mil_gl_kat_i";
 		};
-		class Item73
+		class Item71
 		{
 			className="rnt_ace_compatibility";
 			name="rnt_ace_compatibility";
@@ -672,7 +655,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=81;
+									items=94;
 									class Item0
 									{
 										class data
@@ -1807,6 +1790,188 @@ class CustomAttributes
 											value="ace_medical_treatment_locationsurgicalkit";
 										};
 									};
+									class Item81
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_frag_spallenabled";
+										};
+									};
+									class Item82
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_explosives_explodeondefuse";
+										};
+									};
+									class Item83
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_bleedingcoefficient";
+										};
+									};
+									class Item84
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_artillerytables_disableartillerycomputer";
+										};
+									};
+									class Item85
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_allowselfpak";
+										};
+									};
+									class Item86
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_mk6mortar_useammohandling";
+										};
+									};
+									class Item87
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_gui_maxdistance";
+										};
+									};
+									class Item88
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_paincoefficient";
+										};
+									};
+									class Item89
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_locationsboosttraining";
+										};
+									};
+									class Item90
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_medicpak";
+										};
+									};
+									class Item91
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_locationpak";
+										};
+									};
+									class Item92
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_timecoefficientpak";
+										};
+									};
+									class Item93
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_map_bft_interval";
+										};
+									};
 								};
 							};
 						};
@@ -1823,7 +1988,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=81;
+									items=94;
 									class Item0
 									{
 										class data
@@ -3064,7 +3229,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -3075,7 +3240,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
 														value=1;
@@ -4324,7 +4489,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.5;
+														value=0.30000001;
 													};
 												};
 												class Item1
@@ -4369,7 +4534,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=3;
 													};
 												};
 												class Item1
@@ -4594,7 +4759,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=300;
+														value=390;
 													};
 												};
 												class Item1
@@ -4954,7 +5119,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -5450,6 +5615,591 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item81
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item82
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item83
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0.80000001;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item84
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item85
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item86
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item87
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=3;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item88
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item89
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item90
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item91
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=3;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item92
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item93
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=30;
 													};
 												};
 												class Item1
@@ -21943,8 +22693,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
-					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
 					class Value
 					{
 						class data
@@ -21953,10 +22703,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="gm_ge_army_blk";
+							value=12;
 						};
 					};
 				};
@@ -22285,8 +23035,8 @@ class Mission
 				};
 				class Attribute18
 				{
-					property="ace_repair_editorLoadedTracks";
-					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
+					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 					class Value
 					{
 						class data
@@ -22295,10 +23045,10 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"STRING"
 								};
 							};
-							value=12;
+							value="gm_ge_army_blk";
 						};
 					};
 				};
@@ -22757,35 +23507,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1850.5339,14.616374,4939.5098};
+						position[]={1850.5341,14.616366,4939.5098};
 					};
 					side="West";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Company Leader Assistant";
 						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="gm_mg3_blk";
-								class primaryMuzzleMag
-								{
-									name="gm_120Rnd_762x51mm_B_T_DM21_mg3_grn";
-									ammoLeft=120;
-								};
-							};
-							class uniform
-							{
-								typeName="U_B_CombatUniform_mcam";
-								isBackpack=0;
-							};
-							goggles="G_Tactical_Clear";
-						};
 					};
-					id=2277;
-					type="B_Survivor_F";
+					id=2874;
+					type="B_Soldier_SL_F";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
