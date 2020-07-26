@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2875;
+		nextID=2876;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=430;
+		nextID=439;
 	};
 	class Camera
 	{
@@ -6299,7 +6299,7 @@ class Mission
 			name="Template: Module";
 			class Entities
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					dataType="Logic";
@@ -6331,9 +6331,22 @@ class Mission
 					id=951;
 					atlOffset=-19.15;
 				};
+				class Item3
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={89.971413,25.839146,1517.5693};
+						angles[]={0.0024897563,0,0.067397334};
+					};
+					name="HC_1";
+					isPlayable=1;
+					id=2875;
+					type="HeadlessClient_F";
+				};
 			};
 			id=728;
-			atlOffset=-9.0775805;
+			atlOffset=-2.5993958;
 		};
 		class Item1
 		{
@@ -22693,8 +22706,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ace_repair_editorLoadedTracks";
-					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
+					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 					class Value
 					{
 						class data
@@ -22703,10 +22716,10 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"STRING"
 								};
 							};
-							value=12;
+							value="gm_ge_army_blk";
 						};
 					};
 				};
@@ -23035,8 +23048,8 @@ class Mission
 				};
 				class Attribute18
 				{
-					property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
-					expression="[_this,_value,0,0] spawn gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
 					class Value
 					{
 						class data
@@ -23045,10 +23058,10 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"SCALAR"
 								};
 							};
-							value="gm_ge_army_blk";
+							value=12;
 						};
 					};
 				};
