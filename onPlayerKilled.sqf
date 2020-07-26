@@ -1,7 +1,6 @@
 //WAVE RESPAWN
-if (([missionConfigFile >> "missionSettings","waveRespawnEnabled",0] call BIS_fnc_returnConfigEntry) == 1) then {
+if (([missionConfigFile >> "missionSettings" >> "respawnSettings" >> "waveRespawnEnabled", "NUMBER", 0] call CBA_fnc_getConfigEntry) == 1) then {
     [] call grad_waverespawn_fnc_onPlayerKilled;
-
 
 //NORMAL RESPAWN
 } else {
@@ -11,7 +10,7 @@ if (([missionConfigFile >> "missionSettings","waveRespawnEnabled",0] call BIS_fn
         case (INDEPENDENT): {"respawntimeInd"};
         default {"respawntimeBlu"};
     };
-    _respawnTime = [missionConfigFile >> "missionSettings" >> "respawnSettings",_respawnTimeVar,10] call BIS_fnc_returnConfigEntry;
+    _respawnTime = [missionConfigFile >> "missionSettings" >> "respawnSettings" >> _respawnTimeVar, "NUMBER", 10] call CBA_fnc_getConfigEntry;
 
     if (_respawnTime > 1800) then {
         ["Terminate"] call BIS_fnc_EGSpectator;
